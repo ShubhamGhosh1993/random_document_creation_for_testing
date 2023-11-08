@@ -21,5 +21,6 @@ from pdfdoccreator import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('helloWorld/', views.hello_world),
-    path('downloadPdf/<int:num>', views.downloadPdf),
+    path('download-pdf/<int:num>', views.downloadPdf),
+    path('download-epub/<int:num>', views.downloadEpub),
 ]
